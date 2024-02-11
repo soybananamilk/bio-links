@@ -9,17 +9,21 @@ body{
 
 
 .banner-container img{
-    width: 414px;
+    width: 392px;
+    padding-bottom: 5px;
+    
 }
 
 
 .bio-descriptions{
-    
+    padding-top: 0px;
+    margin: 0px;
 }
 
 .bio-description-container{
     display: flex;
     flex-direction: row;
+    
 }
 
 .bio-description-container ul{
@@ -31,11 +35,16 @@ body{
 
 .bio-description-container ul li{
     padding: 10px ; 
-    border-top: 3px solid black;
+    border-top: 3px solid #242321;
     border-width: 3px;
     border-color: #242321;
     font-size: 20px;
     font-family: 'Krub', sans-serif;
+}
+
+.bio-description-container #fd{
+    border-right: 2px solid #242321
+
 }
 
 .links-container{
@@ -53,7 +62,7 @@ body{
 }
 
 .links-container ul li{
-    border: 3px solid black;
+    border: 3px solid #242321;
     padding-top: 25px;
     padding-bottom: 25px;
     padding-left: 125px;
@@ -67,14 +76,19 @@ body{
     background-color: #B2AB9D ;
 }
 
+.links-container ul li:hover{
+    background-color: #796D63;
+    transition: 0.5s;
+}
+
 a{
     text-decoration: none;
-    color: black;
+    color: #242321;
     }
 
 a:visited{
     text-decoration: none;
-    color: black;   
+    color: #242321;   
 }
 
 .footer{
@@ -83,10 +97,11 @@ a:visited{
 
 .footer p{
     font-family: 'Krub', sans-serif;
-    font-size: 12px;
-    padding-left: 35px;
-    padding-right: 35px;
-    
+    font-size: 10px;
+    padding-left: 25px;
+    padding-right: 10px;
+    text-transform: uppercase;
+    padding-bottom: 30px;
 }
 
 @media screen and (min-width: 480px) {
