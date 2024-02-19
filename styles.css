@@ -6,6 +6,10 @@ body{
     background-color: #E0DAD7;
 }
 
+.banner-container{
+    display: flex;
+    justify-content: center;
+}
 
 
 .banner-container img{
@@ -16,39 +20,44 @@ body{
 
 
 .bio-descriptions{
+    display: flex;
     padding-top: 0px;
     margin: 0px;
+    justify-content: center;
 }
 
 .bio-description-container{
     display: flex;
+    justify-content: center;
     flex-direction: row;
-    
 }
 
 .bio-description-container ul{
     display: flex;
     list-style: none;
-    padding: 0; 
+    padding-top: 20px; 
     margin: 0;
+    justify-content: center;
 }
 
 .bio-description-container ul li{
-    padding: 10px ; 
+    position: relative;
+    padding: 5px ; 
     border-top: 3px solid #242321;
-    border-width: 3px;
+    border-width: 2px;
     border-color: #242321;
     font-size: 20px;
+    left: -20px;
     font-family: 'Krub', sans-serif;
 }
 
 .bio-description-container #fd{
-    border-right: 2px solid #242321
-
+    border-right: 1px solid #242321;
 }
 
 .links-container{
     display: flex;
+    justify-content: center;
     padding-bottom: 0px;
 }
 
@@ -59,10 +68,12 @@ body{
     padding: 20px;
     padding-bottom: 0px;
     margin: 0px;
+    justify-content: center;
 }
 
 .links-container ul li{
-    border: 3px solid #242321;
+    display: flex;
+    border: 1px solid #242321;
     padding-top: 25px;
     padding-bottom: 25px;
     padding-left: 125px;
@@ -74,6 +85,7 @@ body{
     text-decoration: none;
     color: #242321;
     background-color: #B2AB9D ;
+    justify-content: center;
 }
 
 .links-container ul li:hover{
@@ -96,6 +108,7 @@ a:visited{
 }
 
 .footer p{
+    display:none;
     font-family: 'Krub', sans-serif;
     font-size: 10px;
     padding-left: 25px;
@@ -104,6 +117,18 @@ a:visited{
     padding-bottom: 30px;
 }
 
-@media screen and (min-width: 480px) {
-    
+.whole-body{
+    border: 1px solid black;
+    display:flex;
+    flex-direction: column;
+   
+    margin-left: 450px;
+    margin-right: 450px;
+}
+
+@media screen and (min-width: 380px) {
+    .whole-body{
+        margin:0;
+        border: none;
+    }
 }
