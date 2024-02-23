@@ -105,15 +105,17 @@ a:visited{
 
 .footer{
     display: flex;
+    justify-content: center;
 }
 
 .footer p{
-    display:none;
+    width: 500px;
     font-family: 'Krub', sans-serif;
     font-size: 10px;
     padding-left: 25px;
     padding-right: 10px;
     text-transform: uppercase;
+    
     padding-bottom: 30px;
 }
 
