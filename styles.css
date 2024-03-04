@@ -104,7 +104,7 @@ a:visited{
 }
 
 .footer{
-    display: flex;
+    display: none;
     justify-content: center;
 }
 
